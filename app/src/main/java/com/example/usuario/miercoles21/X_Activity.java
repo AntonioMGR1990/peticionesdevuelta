@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class C_Activity extends AppCompatActivity implements View.OnClickListener{
+public class X_Activity extends B_Activity {
+
 
     private Intent intent=new Intent();
     private Button btnVolver;
@@ -15,11 +16,7 @@ public class C_Activity extends AppCompatActivity implements View.OnClickListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_c_);
-        btnVolver = findViewById(R.id.btnVolver);
-        btnCancel = findViewById(R.id.btnCancel);
-        btnVolver.setOnClickListener(this);
-        btnCancel.setOnClickListener(this);
+
     }
 
     @Override
@@ -27,12 +24,12 @@ public class C_Activity extends AppCompatActivity implements View.OnClickListene
 
         switch (view.getId()) {
             case R.id.btnVolver:
-                intent.putExtra("nombre","nombre del intent:volver");
+                intent.putExtra("nombre","nombre del intentX:volver");
                 setResult(Activity.RESULT_OK,intent);
                 finish();
                 break;
             case R.id.btnCancel:
-                intent.putExtra("nombre","nombre del intent:cancel");
+                intent.putExtra("nombre","nombre del intentX:cancel");
                 setResult(Activity.RESULT_CANCELED,intent);
                 finish();
                 break;

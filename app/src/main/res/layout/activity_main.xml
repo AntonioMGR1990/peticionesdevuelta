@@ -26,4 +26,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/BotonB"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/NombreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="82dp"
+        app:layout_constraintStart_toEndOf="@+id/BotonB"
+        app:layout_constraintTop_toBottomOf="@+id/BotonB" />
+
+    <Button
+        android:id="@+id/BotonX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="X"
+        app:layout_constraintBottom_toTopOf="@+id/BotonB"
+        app:layout_constraintStart_toEndOf="@+id/BotonB" />
 </android.support.constraint.ConstraintLayout>
