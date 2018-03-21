@@ -11,8 +11,6 @@ public class X_Activity extends B_Activity {
 
 
     private Intent intent=new Intent();
-    private Button btnVolver;
-    private Button btnCancel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
